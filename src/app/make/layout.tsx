@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Resume Maker',
-  description: 'Create a professional resume for free with our easy-to-use online resume builder. No login required, unlimited downloads. Stand out with a well-crafted resume.',
+  title: 'Build Your Resume',
+  description: 'Build your resume quickly.',
 }
 
 export default function RootLayout({
