@@ -135,7 +135,7 @@ export const OceanTemplate = ({ personalDetails, professionalSummary, profession
 
         {
           customSections.map((customSection)=>(
-            <View style={styles.sections}>
+            <View key={customSection.title} style={styles.sections}>
               <Text style={styles.sectionTitle}>{customSection.title}</Text>
               {
                 customSection.fields.map((field) => (
