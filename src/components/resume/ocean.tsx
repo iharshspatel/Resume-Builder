@@ -139,7 +139,7 @@ export const OceanTemplate = ({ personalDetails, professionalSummary, profession
               <Text style={styles.sectionTitle}>{customSection.title}</Text>
               {
                 customSection.fields.map((field) => (
-                  <View>
+                  <View key={field.name}>
                   <View style={styles.subHeaderContainer}>
                     <Text style={styles.sectionSubTitle}>{field.name} {field.location && `, At ${field.location}`}</Text>
                     <Text> {monthNames[field?.startDate.getMonth()]},{field?.startDate.getFullYear()} - {monthNames[field.endDate.getMonth()]},{field.endDate.getFullYear()}</Text>
